@@ -1,0 +1,12 @@
+﻿string cadena = "Hola mundo";
+string cadena2 = cadena;
+cadena = "Hola programdores\n\"Mensaje de bienvenida\"";
+string ruta = @"C:\Usuarios\Marcos\Documentos"; //"C:\\Usuarios\\Marcos\\Documentos";
+int programadores = 10;
+decimal sueldo = 105000.5m;
+string comunidad = $"Exiten {programadores} programadores en la comunidad que ganan {sueldo:C}";
+Console.WriteLine(cadena);
+Console.WriteLine(cadena2);
+Console.WriteLine(ruta);
+Console.WriteLine(comunidad);
+Console.ReadKey();
