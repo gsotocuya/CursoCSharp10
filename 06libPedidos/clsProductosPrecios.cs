@@ -22,11 +22,11 @@ public class clsProductosPrecios : clsProductos
                $"Porcentaje Ieps: {PorcentajeIeps.ToString()}"; 
     }
 
-    public decimal DesglosaImpuestos(out decimal MontoIva, out decimal MontoIeps)
+    public decimal DesglosaImpuestos(recMontosImpuestos Montos)
     {
         decimal resultado = 0;
-        CalculoPrecios.DesglosaImpuesto(PrecioPublico, PorcentajeIva, PorcentajeIeps,
-            out MontoIva, out MontoIeps);
+        recImpuestos Impuestos = new recImpuestos(PorcentajeIva, PorcentajeIeps);
+        CalculoPrecios.DesglosaImpuesto(PrecioPublico, Impuestos, Montos);
         return resultado;
     }
     #endregion

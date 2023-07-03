@@ -55,10 +55,10 @@ Console.WriteLine(cliente.ToString());
         Producto.PorcentajeIeps = 8;
         decimal precioSinImpuestos, MontoIva, MontoIeps;
         Console.WriteLine(Producto);
-        precioSinImpuestos = Producto.DesglosaImpuestos(out MontoIva, out MontoIeps);
+        recMontosImpuestos Montos = new recMontosImpuestos(0,0);
+        precioSinImpuestos = Producto.DesglosaImpuestos(Montos);
         Console.WriteLine(precioSinImpuestos.ToString("C"));
-        Console.WriteLine(MontoIva.ToString("C"));
-        Console.WriteLine(MontoIeps.ToString("c"));
+        Console.WriteLine(Montos.ToString());
         ;
     }
     #endregion
