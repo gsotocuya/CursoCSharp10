@@ -1,0 +1,15 @@
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/bin/Debug/net7.0/01HolaMundo
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/bin/Debug/net7.0/01HolaMundo.deps.json
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/bin/Debug/net7.0/01HolaMundo.runtimeconfig.json
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/bin/Debug/net7.0/01HolaMundo.dll
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/bin/Debug/net7.0/01HolaMundo.pdb
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.csproj.AssemblyReference.cache
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.AssemblyInfoInputs.cache
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.AssemblyInfo.cs
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.csproj.CoreCompileInputs.cache
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.dll
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/refint/01HolaMundo.dll
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.pdb
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/01HolaMundo.genruntimeconfig.cache
+/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/01HolaMundo/obj/Debug/net7.0/ref/01HolaMundo.dll
