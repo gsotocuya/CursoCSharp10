@@ -104,5 +104,42 @@ Console.WriteLine(cliente.ToString());
             }
         } while (opcion != 4);
     }
+
+    public static void EjemploDiccionario()
+    {
+        ctrObtenProductos cProductos = new ctrObtenProductos();
+        cProductos.ObtenProductos();
+        int opcion = 0;
+        do
+        {
+            Console.WriteLine("Opciones del diccionario de productos");
+            Console.WriteLine();
+            Console.WriteLine("1. Ver la lista de productos");
+            Console.WriteLine("2. Buscar un producto por codigo de barras");
+            Console.WriteLine("3. Salir");
+            opcion = Convert.ToInt32(Console.ReadLine());
+            switch (opcion)
+            {
+                case 1:
+                    foreach (recProductos item in cProductos.Productos.Values)
+                    {
+                        Console.WriteLine(item.ToString());
+                    }
+                    break;
+                case 2:
+                    Console.WriteLine("Dame un código de barras");
+                    string codigo = Console.ReadLine();
+                    recProductos producto;
+                    if (cProductos.ObtenProducto(codigo, out producto))
+                        Console.WriteLine("El valor encontrado es: " + producto.ToString());
+                    else
+                        Console.WriteLine("El producto no se encontró");
+                    break;
+               
+                default:
+                    break;
+            }
+        } while (opcion != 3);
+    }
     #endregion
 }
