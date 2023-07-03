@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03TipoString", "03TipoStrin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04ComparacionCadenas", "04ComparacionCadenas\04ComparacionCadenas.csproj", "{EA8F239C-A191-4A00-9B01-9AF35B0292B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05ConversionTipos", "05ConversionTipos\05ConversionTipos.csproj", "{4FF12341-19F3-4E63-A57E-F6D374D6E6CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{EA8F239C-A191-4A00-9B01-9AF35B0292B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA8F239C-A191-4A00-9B01-9AF35B0292B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA8F239C-A191-4A00-9B01-9AF35B0292B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF12341-19F3-4E63-A57E-F6D374D6E6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF12341-19F3-4E63-A57E-F6D374D6E6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF12341-19F3-4E63-A57E-F6D374D6E6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF12341-19F3-4E63-A57E-F6D374D6E6CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
