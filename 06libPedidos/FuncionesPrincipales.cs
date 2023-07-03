@@ -61,5 +61,48 @@ Console.WriteLine(cliente.ToString());
         Console.WriteLine(Montos.ToString());
         ;
     }
+
+    public static void EjemploColeccionesClientes()
+    {
+        List<clsClientes> Clientes = new List<clsClientes>();
+        int opcion = 0;
+        do
+        {
+            Console.WriteLine("Opciones de la lista clientes");
+            Console.WriteLine();
+            Console.WriteLine("1. Agregar cliente");
+            Console.WriteLine("2. Mostrar lista");
+            Console.WriteLine("3. Eliminar cliente");
+            Console.WriteLine("4. Salir");
+            opcion = Convert.ToInt32(Console.ReadLine());
+            switch (opcion)
+            {
+                case 1:
+                    Console.WriteLine("Dame los datos del cliente");
+                    clsClientes cliente = new clsClientes();
+                    Console.WriteLine("Dame el id del cliente");
+                    cliente.idCliente = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Dame el nombre completo del cliente");
+                    cliente.NombreCompleto = Console.ReadLine();
+                    Console.WriteLine("Dame el RFC del cliente");
+                    cliente.Rfc = Console.ReadLine();
+                    Clientes.Add(cliente);
+                    break;
+                case 2:
+                    foreach (clsClientes item in Clientes)
+                    {
+                        Console.WriteLine(item.ToString());
+                    }
+                    break;
+                case 3:
+                    Console.WriteLine("Dame la posición de la lista:");
+                    int posicion = Convert.ToInt32(Console.ReadLine());
+                    Clientes.RemoveAt(posicion);
+                    break;
+                default:
+                    break;
+            }
+        } while (opcion != 4);
+    }
     #endregion
 }
