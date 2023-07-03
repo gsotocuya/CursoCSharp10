@@ -1,6 +1,6 @@
 namespace _06libPedidos;
 
-public class clsRepositorioMemProductos
+public class clsRepositorioMemProductos : intRepositorioProductos
 {
     #region Metodos
 

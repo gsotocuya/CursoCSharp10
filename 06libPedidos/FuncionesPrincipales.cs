@@ -107,7 +107,8 @@ Console.WriteLine(cliente.ToString());
 
     public static void EjemploDiccionario()
     {
-        ctrObtenProductos cProductos = new ctrObtenProductos();
+        clsRepositorioMemProductos repoProductos = new clsRepositorioMemProductos();
+        ctrObtenProductos cProductos = new ctrObtenProductos(repoProductos);
         cProductos.ObtenProductos();
         int opcion = 0;
         do

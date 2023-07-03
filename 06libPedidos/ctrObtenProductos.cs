@@ -4,16 +4,16 @@ public class ctrObtenProductos
 {
     #region Propiedades
 
-    private clsRepositorioMemProductos repoProductos;
+    private intRepositorioProductos repoProductos;
     public Dictionary<string, recProductos> Productos { get; set; }
 
     #endregion
 
     #region Constructor
 
-    public ctrObtenProductos()
+    public ctrObtenProductos( intRepositorioProductos prepoProductos)
     {
-        repoProductos = new clsRepositorioMemProductos();
+        repoProductos = prepoProductos;
         Productos = new Dictionary<string, recProductos>();
     }
 
