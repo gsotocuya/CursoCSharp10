@@ -1,32 +1,26 @@
-﻿using _06libPedidos;
-/*
-clsClientes cliente;
-cliente = new clsClientes();
-cliente.idCliente = 1;
-cliente.NombreCompleto = "Marcos Hernandez";
-cliente.Rfc = "HEH010165";
-Console.WriteLine(cliente.ToString()); */
+﻿global using _06libPedidos;
+//using _06AplicacionPedidos;
+int opcion = 0;
+do
+{
+    Console.WriteLine("Menú de opciones");
+    Console.WriteLine();
+    Console.WriteLine("1. Ejemplo de cliente");
+    Console.WriteLine("2. Ejemplo de record de productos");
+    Console.WriteLine("3. Ejemplo de paso de parámetros a un Método");
+    Console.WriteLine("20. Salir");
+    opcion = Convert.ToInt32(Console.ReadLine());
+    switch (opcion)
+    {
+        case 1: 
+            FuncionesPrincipales.EjemploCliente(); 
+            break;
+        case 2: 
+            FuncionesPrincipales.EjemploRecordProducto();
+            break;
+        default:
+            break;
+    }
 
-clsProductos Producto = new clsProductos();
-Producto.idProducto = 1;
-Producto.Descripcion = "REF MANZANA 600 ML";
-Producto.CodigoBarras = "0001";
-clsProductos Producto2 = new clsProductos();
-Producto2 = Producto;
-Producto2.CodigoBarras = "0";
+} while (opcion != 20);
 
-recProductos rProducto = new recProductos(1, "REF MANZANA 600 ML", "0001");
-recProductos rProducto2 = rProducto with {CodigoBarras = "0"};
-Console.WriteLine("Producto: " + Producto);
-Console.WriteLine("Producto2: " + Producto2);
-Console.WriteLine("rProducto: " + rProducto);
-Console.WriteLine("rProducto2: " + rProducto2);
-
-if(Producto == Producto2)
-    Console.WriteLine("Los objetos son iguales");
-else
-    Console.WriteLine("Los objetos son diferentes");
-if(rProducto == rProducto2)
-    Console.WriteLine("Los registros son iguales");
-else
-    Console.WriteLine("Los registros son diferentes");
