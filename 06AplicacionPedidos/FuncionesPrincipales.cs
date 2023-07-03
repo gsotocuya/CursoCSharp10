@@ -1,4 +1,4 @@
-namespace _06libPedidos;
+namespace _06AplicacionPedidos;
 
 public static class FuncionesPrincipales
 {
@@ -107,8 +107,12 @@ Console.WriteLine(cliente.ToString());
 
     public static void EjemploDiccionario()
     {
+        try
+        {
+
         clsRepositorioMemProductos repoProductos = new clsRepositorioMemProductos();
-        ctrObtenProductos cProductos = new ctrObtenProductos(repoProductos);
+        clsRepositorioArchivoProductos repoArchProductos = new clsRepositorioArchivoProductos(@"/Users/grimaldo.soto/My Drive/Projects/CursoCSharp10/06AplicacionPedidos/Archivos/Productos.txt");
+        ctrObtenProductos cProductos = new ctrObtenProductos(repoArchProductos);
         cProductos.ObtenProductos();
         int opcion = 0;
         do
@@ -141,6 +145,13 @@ Console.WriteLine(cliente.ToString());
                     break;
             }
         } while (opcion != 3);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+        //
     }
+        
     #endregion
 }

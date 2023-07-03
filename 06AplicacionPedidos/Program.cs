@@ -1,5 +1,5 @@
 ﻿global using _06libPedidos;
-//using _06AplicacionPedidos;
+using _06AplicacionPedidos;
 int opcion = 0;
 do
 {
