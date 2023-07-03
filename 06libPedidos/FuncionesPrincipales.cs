@@ -42,5 +42,24 @@ Console.WriteLine(cliente.ToString());
             Console.WriteLine("Los registros son diferentes");
 
     }
+
+    public static void EjemploDesglosaImpuestos()
+    {
+        clsProductosPrecios Producto = new clsProductosPrecios();
+        Producto.idProducto = 1;
+        Producto.Descripcion = "REF MANZANA 600 ML";
+        Producto.CodigoBarras = "0001";
+        Producto.PrecioPublico = 17.5m;
+        Producto.PrecioMayoreo = 17;
+        Producto.PorcentajeIva = 16;
+        Producto.PorcentajeIeps = 8;
+        decimal precioSinImpuestos, MontoIva, MontoIeps;
+        Console.WriteLine(Producto);
+        precioSinImpuestos = Producto.DesglosaImpuestos(out MontoIva, out MontoIeps);
+        Console.WriteLine(precioSinImpuestos.ToString("C"));
+        Console.WriteLine(MontoIva.ToString("C"));
+        Console.WriteLine(MontoIeps.ToString("c"));
+        ;
+    }
     #endregion
 }
